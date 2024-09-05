@@ -1,0 +1,26 @@
+@font-face {
+  font-family: superior;
+  src: url(fonts/superior-title-black.otf);
+}
+
+@font-face {
+  font-family: itc;
+
+  src: url(fonts/ITC-Avant-Garde-Gothic-Pro-Book.otf);
+}
+
+@font-face {
+  font-family: source-sans;
+  src: url(fonts/SourceSans3-Regular.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+
+  color: #18191d;
+}
+
+body {
+  background-color: #fbfbfa;
+}

@@ -1,0 +1,313 @@
+.headline {
+  font-family: superior;
+  font-size: clamp(1.6875rem, 0.9844rem + 3.5156vw, 4.5rem);
+}
+
+.middleSmall {
+  font-family: itc;
+  font-weight: 100;
+  font-size: clamp(0.6875rem, 0.4375rem + 1.25vw, 1.6875rem);
+}
+
+.middle {
+  font-family: itc;
+  font-size: clamp(1.0625rem, 0.9063rem + 0.7813vw, 1.6875rem);
+  font-weight: 100;
+}
+
+.body {
+  font-family: source-sans;
+  font-size: clamp(0.6875rem, 0.5938rem + 0.4688vw, 1.0625rem);
+
+  font-weight: 600;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: clamp(3.875rem, 2.7813rem + 5.4688vw, 6.25rem);
+  margin-bottom: clamp(3.5rem, 3.125rem + 1.875vw, 5rem);
+}
+
+.card-section {
+  width: clamp(15rem, -4.6875rem + 98.4375vw, 93.75rem);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: clamp(5rem, 4.25rem + 3.75vw, 8rem);
+  column-gap: 2rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  text-align: start;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: end;
+  align-items: center;
+}
+
+.text-content {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 40%;
+  align-items: end;
+  justify-content: space-around;
+}
+
+.card:nth-child(1) {
+  width: clamp(15.625rem, 6.25rem + 46.875vw, 53.125rem);
+
+  .couch-img {
+    width: clamp(12.5rem, 6.25rem + 31.25vw, 37.5rem);
+  }
+  .text-content::after {
+    content: "";
+    height: 100%;
+
+    width: 99%;
+    position: absolute;
+    background-color: transparent;
+    background-color: #fbfbfa;
+    border: solid #c39c3b;
+    z-index: -1;
+    border-top-left-radius: clamp(0.5rem, 0.125rem + 1.875vw, 2rem);
+
+    border-bottom-right-radius: clamp(0.5rem, 0.125rem + 1.875vw, 2rem);
+
+    position: absolute;
+    right: 0%;
+
+    top: -4%;
+  }
+  .headline,
+  .middle {
+    color: #c39c3b;
+    opacity: 85%;
+  }
+  .middle {
+    margin-bottom: 2%;
+  }
+}
+
+.card:nth-child(1)::after {
+  content: "";
+  height: 80%;
+  width: inherit;
+
+  position: absolute;
+  right: 50;
+  top: 20%;
+
+  z-index: -10;
+
+  border-top-right-radius: clamp(2rem, 0.125rem + 1.875vw, 2rem);
+  background-color: #c39c3b;
+  opacity: 85%;
+  border-bottom-right-radius: clamp(0.5rem, 0.125rem + 1.875vw, 2rem);
+}
+
+.card:nth-child(2) {
+  width: clamp(6.25rem, 0.7813rem + 27.3438vw, 28.125rem);
+  background-color: #ddede1;
+  z-index: 1;
+  border-bottom-left-radius: 3rem;
+  /* 
+  min: 150px
+  max: 378px
+  */
+  .couch-img {
+    width: clamp(5rem, 0.7813rem + 21.0938vw, 21.875rem);
+
+    /*
+  min: 130px
+  max: 350px
+  */
+  }
+  .text-content {
+    margin-bottom: 4%;
+  }
+}
+
+.card:nth-child(2)::after {
+  content: "";
+  height: 20%;
+
+  width: 100%;
+  background-color: #fbfbfa;
+  position: absolute;
+  z-index: -1;
+  right: 0%;
+  top: 78%;
+  border: solid #ddede1;
+
+  border-top-left-radius: 2rem;
+}
+
+.card:nth-child(3) {
+  width: clamp(6.25rem, 1.5625rem + 23.4375vw, 25rem);
+  height: clamp(9.375rem, 5.4688rem + 19.5313vw, 25rem);
+  background-color: #ddede1;
+  z-index: 1;
+  border-bottom-right-radius: 3rem;
+  /* 
+  min: 150px
+  max: 378px
+  */
+  .couch-img {
+    width: clamp(5rem, 0.7813rem + 21.0938vw, 21.875rem);
+
+    /*
+  min: 130px
+  max: 350px
+  */
+  }
+
+  .text-content {
+    margin-bottom: 4%;
+  }
+}
+
+.card:nth-child(3)::after {
+  content: "";
+  height: 20%;
+
+  width: 100%;
+  background-color: #fbfbfa;
+  position: absolute;
+  z-index: -1;
+  right: -3%;
+  top: 78%;
+  border: solid #ddede1;
+  border-top-right-radius: 2rem;
+}
+
+.card:nth-child(4) {
+  width: clamp(15.625rem, 13.2813rem + 11.7188vw, 25rem);
+  height: clamp(11.375rem, 5.4688rem + 19.5313vw, 25rem);
+
+  /*
+  min: 378px
+  max: 150px
+  */
+  .couch-img {
+    width: clamp(12.5rem, 10.1563rem + 11.7188vw, 21.875rem);
+    /*
+        
+
+  min: 350px
+  max: 130px
+  */
+  }
+  .text-content::after {
+    content: "";
+    height: clamp(3.25rem, 0.2188rem + 5.1563vw, 4.375rem);
+
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    background-color: #fbfbfa;
+    border: solid #18191d;
+
+    z-index: -1;
+    border-top-left-radius: clamp(0.5rem, 0.125rem + 1.875vw, 2rem);
+
+    border-bottom-right-radius: clamp(0.5rem, 0.125rem + 1.875vw, 2rem);
+
+    position: absolute;
+    right: -6px;
+  }
+  .headline,
+  .middle,
+  .body {
+    margin-bottom: clamp(1rem, 1.875rem + -3.875vw, -5rem);
+    margin-top: clamp(0rem, -0.25rem + 1.25vw, 0rem);
+  }
+}
+
+.card:nth-child(4)::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  right: 50;
+
+  z-index: -10;
+  background-color: transparent;
+  border-top-right-radius: clamp(2rem, 0.125rem + 1.875vw, 2rem);
+
+  border-top-left-radius: clamp(2rem, 0.125rem + 1.875vw, 2rem);
+  border: solid;
+  border-bottom: none;
+  border-bottom-right-radius: clamp(4rem, 0.125rem + 1.875vw, 2rem);
+  border-bottom-left-radius: clamp(4rem, 0.125rem + 1.875vw, 2rem);
+}
+
+.card:nth-child(5) {
+  width: clamp(15.625rem, 13.2813rem + 11.7188vw, 25rem);
+  height: clamp(11.375rem, 5.4688rem + 19.5313vw, 25rem);
+  /*
+  min: 378px
+  max: 150px
+  */
+  .couch-img {
+    width: clamp(12.5rem, 10.1563rem + 11.7188vw, 21.875rem);
+
+    /*
+  min: 350px
+  max: 130px
+  */
+  }
+  .text-content::after {
+    content: "";
+    height: clamp(3.5rem, 0.2188rem + 5.1563vw, 4.375rem);
+
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    background-color: #fbfbfa;
+    border: solid #18191d;
+
+    z-index: -1;
+    border-top-left-radius: clamp(0.5rem, 0.125rem + 1.875vw, 2rem);
+
+    border-bottom-right-radius: clamp(0.5rem, 0.125rem + 1.875vw, 2rem);
+
+    position: absolute;
+    right: -6px;
+  }
+
+  .headline,
+  .middle,
+  .body {
+    margin-bottom: clamp(1rem, 1.875rem + -3.875vw, -5rem);
+    margin-top: clamp(0rem, -0.25rem + 1.25vw, 0rem);
+  }
+}
+
+.card:nth-child(5)::after {
+  content: "";
+  height: 100%;
+  width: inherit;
+  width: 100%;
+  position: absolute;
+  right: 50;
+  top: -2%;
+  border: solid;
+  border-bottom: none;
+  z-index: -10;
+  background-color: transparent;
+  border-bottom-right-radius: 2.5rem;
+  border-bottom-left-radius: 2.5rem;
+}

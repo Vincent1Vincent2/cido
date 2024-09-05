@@ -1,0 +1,185 @@
+.headline {
+  font-family: superior;
+  font-size: clamp(1.6875rem, 0.2969rem + 6.9531vw, 7.25rem);
+}
+
+.middle {
+  font-family: itc;
+  font-size: clamp(1.0625rem, 0.2031rem + 4.2969vw, 4.5rem);
+  font-weight: 100;
+}
+
+.body {
+  font-family: source-sans;
+  font-size: clamp(0.6875rem, 0.1719rem + 2.5781vw, 2.75rem);
+  font-weight: 100;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: clamp(3.875rem, 2.7813rem + 5.4688vw, 6.25rem);
+  margin-bottom: clamp(2rem, 2.125rem + 1.875vw, 0rem);
+}
+.card-section {
+  background-color: #f3f3f0;
+
+  width: clamp(15rem, -4.6875rem + 98.4375vw, 93.75rem);
+  height: clamp(18.75rem, 12.8438rem + 19.5313vw, 40.375rem);
+
+  border-top-left-radius: clamp(4rem, 0.25rem + 8.75vw, 9rem);
+  border-bottom-right-radius: clamp(4rem, 0.25rem + 8.75vw, 9rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.hero-text {
+  font-size: clamp(2.025rem, 1.0688rem + 5.7813vw, 7.25rem);
+  align-self: flex-start;
+  padding: 0rem clamp(2rem, 1.25rem + 3.75vw, 5rem);
+}
+
+.img-section {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.big {
+  width: clamp(7.25rem, 2.0625rem + 23.4375vw, 25rem);
+  z-index: 5;
+}
+
+.small {
+  width: clamp(3.125rem, 0.7813rem + 11.7188vw, 12.5rem);
+  position: absolute;
+  left: 90%;
+}
+.small:nth-child(1) {
+  width: clamp(3.125rem, 0.7813rem + 11.7188vw, 12.5rem);
+  position: absolute;
+  left: -40%;
+  top: 30%;
+}
+
+.hero-button {
+  font-size: clamp(1.0625rem, 0.6406rem + 2.1094vw, 2.75rem);
+  width: clamp(5rem, 1.5625rem + 17.1875vw, 18.75rem);
+  align-self: flex-end;
+
+  margin: -1rem clamp(1rem, 0.25rem + 3.75vw, 4rem);
+  padding-left: -1rem;
+  border-bottom-right-radius: 9rem;
+  background-color: #fbfbfa;
+  border: none;
+  bottom: clamp(1rem, 0.75rem + 1.25vw, 2rem);
+}
+
+.category-section {
+  height: clamp(15.625rem, 12.5rem + 35.625vw, 48.125rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.category-article {
+  width: clamp(13rem, -4.6875rem + 85.4375vw, 85.75rem);
+  height: clamp(15.625rem, 12.5rem + 15.625vw, 28.125rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(1rem, -0.75rem + 8.75vw, 8rem);
+}
+
+.category-title {
+  align-self: flex-start;
+}
+
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: clamp(0.8rem, 0.5rem + 2.75vw, 3rem);
+}
+
+.category {
+  list-style: none;
+  border: solid 2px;
+  width: clamp(6.25rem, 0.7813rem + 27.3438vw, 28.125rem);
+  height: clamp(3.125rem, 2.0313rem + 5.4688vw, 7.5rem);
+  place-content: center;
+  text-align: center;
+  background-color: #f3f3f0;
+  border: none;
+}
+
+.category:nth-child(1) {
+  grid-area: 1 / 1 / 3 / 3;
+  border-top-left-radius: 3.5rem;
+  padding-left: 1rem;
+  color: #38733a;
+  box-shadow: rgba(0, 0, 0, 0.308) 4px 5px 5px 0.2px;
+}
+
+.category:nth-child(2) {
+  grid-area: 1 / 3 / 3 / 5;
+  border-top-right-radius: 3.5rem;
+  padding-right: 1rem;
+  color: #7f5f14;
+  box-shadow: rgba(0, 0, 0, 0.308) 4px 5px 5px 0.2px;
+}
+
+.category:nth-child(3) {
+  grid-area: 3 / 1 / 5 / 3;
+  border-bottom-left-radius: 3.5rem;
+  padding-left: 1rem;
+  color: #2a2a29;
+  box-shadow: rgba(0, 0, 0, 0.308) 4px 5px 5px 0.2px;
+}
+
+.category:nth-child(4) {
+  grid-area: 3 / 3 / 5 / 5;
+  border-bottom-right-radius: 3.5rem;
+  padding-right: 1rem;
+  color: #38733a;
+  box-shadow: rgba(0, 0, 0, 0.308) 4px 5px 5px 0.2px;
+}
+
+.recommendation-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.recommendation-article {
+  width: clamp(13rem, -4.6875rem + 85.4375vw, 85.75rem);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: clamp(1rem, -0.75rem + 8.75vw, 8rem);
+}
+
+.recommendation-title {
+  align-self: flex-start;
+}
+
+.recommendation-card {
+  width: 200px;
+  border: solid;
+  height: 300px;
+  position: absolute;
+}
+
+.recommendation-card:nth-child(1) {
+  top: 65%;
+}

@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nav {
+  width: clamp(15rem, -4.6875rem + 98.4375vw, 93.75rem);
+  height: clamp(3.125rem, 1.5625rem + 7.8125vw, 9.375rem);
+  background-color: #f3f3f0;
+  border-top: none;
+  border-bottom-left-radius: 99999rem;
+  border-bottom-right-radius: 99999rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  width: clamp(1.25rem, 0.3125rem + 4.6875vw, 5rem);
+}
+
+.ham {
+  width: clamp(1.25rem, 0.3125rem + 4.6875vw, 5rem);
+}
